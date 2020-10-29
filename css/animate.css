@@ -3272,3 +3272,22 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .carousel-centered h3.color-white{display: inline-block;max-width: 1150px;}
+
+.carousel-inner>.item.full-screen::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .4);
+}
+
+@media (max-width: 500px) {
+  .carousel-centered .carousel-title {
+    font-size: 40px;
+  }
+  .carousel-centered h3.color-white {
+    font-size: 16px;
+  }
+}
